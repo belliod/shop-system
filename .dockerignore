@@ -1,0 +1,34 @@
+# 依赖与构建产物（镜像内重新生成）
+node_modules
+dist
+build
+
+# 敏感配置（凭证经 docker-compose 环境变量注入，禁止进入镜像）
+.env
+.env.local
+.env.*.local
+
+# 版本控制
+.git
+.gitignore
+.github
+
+# 日志与运行时数据
+logs
+*.log
+*.pid
+tmp
+temp
+
+# 平台/沙箱残留
+.spark
+.agents
+.agent
+.claude
+.playwright-cli
+
+# IDE 与系统文件
+.vscode
+.idea
+.DS_Store
+Thumbs.db
